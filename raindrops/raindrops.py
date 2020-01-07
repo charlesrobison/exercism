@@ -6,6 +6,5 @@ def convert(number):
         raindrops += 'Plang'
     if number % 7 == 0:
         raindrops += 'Plong'
-    if number % 3 != 0 and number % 5 != 0 and number % 7 != 0:
-        raindrops = str(number)
+    raindrops = raindrops if raindrops else str(number)
     return raindrops
